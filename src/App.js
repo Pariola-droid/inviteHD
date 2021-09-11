@@ -1,56 +1,36 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import './App.css';
+import React from 'react'
+import {HashRouter as Router, Switch, Route} from 'react-router-dom' 
+
+// 
+import { url } from './adapter/common';
+// import AuthRoute from './components/authRoute';
+
+// Homepage
+// import OneShare from "./pages/home/index.js";
+
+// Onboard
+import SignIn from "./pages/onboard/sign_in.js";
+import SignUp from "./pages/onboard/sign_up.js";
+// import Forgot from "./pages/onboard/forgot_password.js";
+
+// Dashboard
+// import Home from "./pages/dashboard/home.js";
+// import AdminHome from "./pages/dashboard/admin_home.js";
+
+// Dashboard
+
 
 function App() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
   return (
-    <main>
-      <h1>Create React App + Go API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
-        </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/main/examples/create-react-app"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        was bootstrapped with{' '}
-        <a href="https://facebook.github.io/create-react-app/">
-          Create React App
-        </a>{' '}
-        and contains three directories, <code>/public</code> for static assets,{' '}
-        <code>/src</code> for components and content, and <code>/api</code>{' '}
-        which contains a serverless <a href="https://golang.org/">Go</a>{' '}
-        function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Go
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Go is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
-    </main>
+    <Router>
+      <Switch>
+            
+          {/* onboard route*/}
+          <Route path={url.signIn} exact component={SignIn} />
+					<Route path={url.signUp} exact component={SignUp} />   
+
+      </Switch>
+    </Router> 
   );
 }
 
