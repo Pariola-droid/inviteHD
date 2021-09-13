@@ -11,28 +11,44 @@
 
  .button {
                                 outline: none;
-                                border: 0;
-                                text-transform: capitalize;
+                                // text-transform: capitalize;
                                 cursor: pointer;
                                 border-radius: 10px;
                                 height: 51px;
                                 padding: 0 40px;
                                 font-size: 14px;
-                                font-weight: 600;
+                                font-weight: 500;
                                 white-space: nowrap;
                                 transition: all .3s ease-in-out;
                                 z-index: 3;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                background: #2130B8;
-                                box-shadow: 0px 13px 25px rgba(33, 48, 184, 0.37);
-                                color: #fff;
+                                border: 1px solid $blue;
+                                background-color: #fff;
+                                color: $blue;
                                 position: relative;
                                 width: 100%;
                                 font-family: 'Poppins', sans-serif;
 
-                                .loader{
+                                & span {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    width: 180px;
+
+                                    & p {
+                                        text-align: left;
+                                    }                                    
+
+                                    & .aLogo {
+                                        height: 20px;
+                                        width: 20px;
+                                        margin-right: 1.3em;
+                                    }
+                                }
+
+    .loader{
         width: 40px;
         height: 40px;
         border: 5px solid #ffffff69;
@@ -45,7 +61,7 @@
     }
 
     &:hover {
-        
+        filter: drop-shadow(0px 13px 25px rgba(33, 48, 184, 0.37));
     }     
                                 
                             

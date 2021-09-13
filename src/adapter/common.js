@@ -7,7 +7,5 @@ export const url = {
 	forgotP: '/account/forgot-password/',
     //
 	
-	//1:dashboard home
-	// dashHome: '/dashboard/user/home',
-	// adminHome: '/dashboard/admin/home',
+	
 }

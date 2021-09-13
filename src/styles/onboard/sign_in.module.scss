@@ -1,0 +1,93 @@
+@import "../../styles/variables";
+
+.sign_in {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    font-family: "Poppins", sans-serif;
+
+    & .wrapper {
+        width: 377px;
+        height: 688.5px;
+        // background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        & .head {
+
+            & h2 {
+                color: $blue;
+                font-size: 30px;
+            }
+        }
+
+        & .form {
+            width: 100%;
+            margin-top: 72px;
+
+            & .nb {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 13px;
+                margin-top: -2.5rem;
+                margin-bottom: 4rem;
+
+                & span {
+                    color: $black;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+
+                    & input {
+                        margin-right: .4rem;
+                    }
+                }
+
+                & a {
+                    color: $blue;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+            }
+
+            & .or {
+                width: 80%;
+                height: 1px;
+                position: relative;
+                display: grid;
+                place-items: center;
+                margin: 0 auto;
+                margin-top: 3rem;
+                margin-bottom: 5rem;
+                background-color: $black;
+
+                & span {
+                    position: absolute;
+                    padding: 0px 30px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    background-color: #fff;
+                }
+            }
+
+            & .auth {
+                height: 140px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
