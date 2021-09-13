@@ -32,9 +32,9 @@ class SignIn extends Component{
                                     Remind me
                                 </span>
 
-                                <a href="#">
+                                <Link to={url.forgotP}>
                                     Forgot your Password?
-                                </a>
+                                </Link>
                             </div>
                             <Button text="Log In" />
                             <div className={styles.or}>

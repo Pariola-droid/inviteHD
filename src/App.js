@@ -26,7 +26,7 @@ function App() {
       <Switch>
             
           {/* onboard route*/}
-          <Route path={url.signIn} exact component={SignIn} />
+          <Route path={url.home} exact component={SignIn} />
 					<Route path={url.signUp} exact component={SignUp} />   
 					<Route path={url.forgotP} exact component={Forgot} />   
 
