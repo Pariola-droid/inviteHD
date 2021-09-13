@@ -24,7 +24,7 @@ class SignUp extends Component{
                         </div>
 
                         <div className={styles.form}>
-                            <InputField type="text" name="fullname" ilabel="E-mail/Username" placeholder="Full name" />
+                            <InputField type="text" name="fullname" ilabel="Fullname" placeholder="Full name" />
                             <InputField type="text" name="username" ilabel="Username" placeholder="Unique name" />
                             <InputField type="email" name="email" ilabel="Email" placeholder="Johndoe@invitehd.com" />
                             <InputField type="password" name="password" ilabel="Password" placeholder="Type your password" />

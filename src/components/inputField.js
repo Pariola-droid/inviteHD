@@ -87,7 +87,7 @@ class InputField extends Component{
                     <section className={styles.inputContainer}>
                         <div className={styles.input_content}>
                             <input value={this.props.val} name={this.props.name} type={this.props.type} placeholder={this.props.placeholder} onChange={(e) => this.model(e)}/>
-                            <label>{this.props.placeinside}</label>
+                            <label>{this.props.ilabel}</label>
                         </div>
                     </section>
                 }

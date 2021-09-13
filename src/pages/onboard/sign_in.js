@@ -24,7 +24,7 @@ class SignIn extends Component{
                         </div>
 
                         <div className={styles.form}>
-                            <InputField type="email" name="email" ilabel="E-mail/Username" placeholder="Email address" />
+                            <InputField type="email" name="email" ilabel="E-mail" placeholder="Email address" />
                             <InputField type="password" name="password" ilabel="Password" placeholder="Type your password" />
                             <div className={styles.nb}>
                                 <span>
