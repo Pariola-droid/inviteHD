@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+.forgot_p {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    font-family: "Poppins", sans-serif;
+
+    & .wrapper {
+        width: 377px;
+        // height: 688.5px;
+        // background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        & .head {
+
+            & h2 {
+                color: $blue;
+                font-size: 25px;
+            }
+        }
+
+        & .form {
+            width: 100%;
+            margin-top: 72px;           
+        }
+    }
+}
+

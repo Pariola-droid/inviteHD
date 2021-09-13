@@ -11,7 +11,7 @@ import { url } from './adapter/common';
 // Onboard
 import SignIn from "./pages/onboard/sign_in.js";
 import SignUp from "./pages/onboard/sign_up.js";
-// import Forgot from "./pages/onboard/forgot_password.js";
+import Forgot from "./pages/onboard/forgot_password.js";
 
 // Dashboard
 // import Home from "./pages/dashboard/home.js";
@@ -28,6 +28,7 @@ function App() {
           {/* onboard route*/}
           <Route path={url.signIn} exact component={SignIn} />
 					<Route path={url.signUp} exact component={SignUp} />   
+					<Route path={url.forgotP} exact component={Forgot} />   
 
       </Switch>
     </Router> 
