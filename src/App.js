@@ -11,9 +11,6 @@ import SignIn from "./pages/onboard/sign_in.js";
 import SignUp from "./pages/onboard/sign_up.js";
 import Forgot from "./pages/onboard/forgot_password.js";
 
-// Dashboard
-// import Home from "./pages/dashboard/home.js";
-// import AdminHome from "./pages/dashboard/admin_home.js";
 
 // Dashboard
 import Dashboard from "./pages/dashboard/index";
