@@ -44,19 +44,20 @@ ul {
     padding-inline-start: 0px;
 }
 
-// .content-container{
-//   height: fit-content;
-//   width: 100%;
-  
-// }
+.content-container{
+  width: 100%;
+  display: flex;
+}
 
-// .content{
-//   width: 100%;
-//   max-height: 1000px;
-//   display: grid;
-//   place-items: center;
-  
-// }
+.content{
+  width: 82%;
+  // width: 18%;
+  padding: 90px 50px;
+  height: fit-content;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+}
 
 a {
     -webkit-transition-duration: 300ms;

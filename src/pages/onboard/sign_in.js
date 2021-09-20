@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { url } from '../../adapter/common'
 import { Link } from 'react-router-dom'
 
-import AuthButton from '../../components/authbtn'
-import Button from '../../components/button'
-import InputField from '../../components/inputField'
+import AuthButton from '../../components/AuthButton'
+import Button from '../../components/Button'
+import InputField from '../../components/InputField'
 
 import fb from "../../assets/svg/facebook 1.svg";
 import google from "../../assets/svg/search 1.svg";
@@ -13,6 +13,9 @@ import styles from "../../styles/onboard/sign_in.module.scss";
 
 class SignIn extends Component{    
     
+    dashBTN(){
+        this.props.history.push('/dashboard/home')
+    }
 
     render(){
         return(
@@ -36,7 +39,14 @@ class SignIn extends Component{
                                     Forgot your Password?
                                 </Link>
                             </div>
-                            <Button text="Log In" />
+
+                            <div className={styles.nb2}>
+                                <span>                                    
+                                    <Link to={url.signUp}>Create a new account!</Link>
+                                </span>
+                            </div>
+
+                            <Button text="Log In" onClick={() => this.dashBTN()} />
                             <div className={styles.or}>
                                 <span>or</span>
                             </div>

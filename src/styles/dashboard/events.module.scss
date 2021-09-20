@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    // background-color: aqua;
+
+    & .welcome {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+        color: #2130B8;
+    }
+
+}

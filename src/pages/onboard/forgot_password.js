@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { url } from '../../adapter/common'
 import { Link } from 'react-router-dom'
 
-import Button from '../../components/button'
-import InputField from '../../components/inputField'
+import Button from '../../components/Button'
+import InputField from '../../components/InputField'
 
 
 import styles from "../../styles/onboard/forgot_pass.module.scss";
@@ -22,6 +22,11 @@ class ForgotPassword extends Component{
 
                         <div className={styles.form}>
                             <InputField type="email" name="email" ilabel="Email" placeholder="Johndoe@invitehd.com" />
+                            <div className={styles.nb}>
+                                <Link to={url.home}>
+                                    Back to Login page
+                                </Link>
+                            </div>
                             <Button text="Submit" />
                         </div>
                     </div>

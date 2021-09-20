@@ -1,0 +1,34 @@
+.wrapper {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 2rem 0;
+    background-color: #fbfbfb;
+    border-radius: 25px;
+
+    & .success {
+        height: auto;
+        width: fit-content;
+        display: grid;
+        place-items: center;
+
+
+        & img {
+            height: 300px;
+        }
+
+        & h2 {
+            text-transform: capitalize;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #2130B8;
+        }
+
+        & .sbtn {
+            width: 300px;
+            margin-bottom: 1rem;
+        }
+    }
+}

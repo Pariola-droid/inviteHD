@@ -1,18 +1,18 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import styles from './styles/button.module.scss'
 
-class Button extends Component{
+class Button extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <>
                 <button className={styles.button} onClick={this.props.onClick}>
-                    {   
+                    {
                         this.props.isLoading === true
-                        ?
-                        <div className={styles.loader}></div>
-                        :
-                        <span>{this.props.text}</span>
+                            ?
+                            <div className={styles.loader}></div>
+                            :
+                            <span>{this.props.text}</span>
                     }
                 </button>
             </>

@@ -19,6 +19,10 @@
         justify-content: flex-start;
         flex-direction: column;
 
+        @media (max-width:550px) {
+            width: 90%;
+        }
+
         & .head {
 
             & h2 {
@@ -48,6 +52,24 @@
                     & input {
                         margin-right: .4rem;
                     }
+                }
+
+                & a {
+                    color: $blue;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+            }
+
+            & .nb2 {
+                font-size: 14px;
+                margin-top: -1rem;
+                margin-bottom: 3.5rem;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 & a {
